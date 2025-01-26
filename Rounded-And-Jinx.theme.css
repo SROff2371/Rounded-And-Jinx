@@ -3,18 +3,16 @@
  * @description Rounded discord theme with Jinx home logo.
  * @author _SR_Off_ ポケモン
  * @version 2.3.75
- * @invite nz87hXyvcy
- * @website https://github.com/SROff2371/Rounded-And-Jinx/Rounded-And-Jinx.theme.css
- * @source https://github.com/refact0r/midnight-discord/blob/master/midnight.theme.css
- * @authorId 508863359777505290
- * @authorLink https://www.refact0r.dev
+ * @website https://github.com/SROff2371/Rounded-And-Jinx
+ * @source https://github.com/SROff2371/Rounded-And-Jinx/blob/main/Rounded-And-Jinx.theme.css
+ * @authorId 1318162462771646506
 */
 
 /* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
 
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Samsung.css);
-@import url('https://minidiscordthemes.github.io/SettingsIcons/main.min.css');
+@import url('https://sroff2371.github.io/midnight.css');
+@import url('https://sroff2371.github.io/Samsung.css');
+@import url('https://sroff2371.github.io/main.min.css');
 
 /* customize things here */
 :root {
