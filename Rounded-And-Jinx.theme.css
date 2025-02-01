@@ -13,6 +13,14 @@
 @import url('https://sroff2371.github.io/midnight.css');
 @import url('https://sroff2371.github.io/Samsung.css');
 @import url('https://sroff2371.github.io/main.min.css');
+@import url("https://raw.githubusercontent.com/ColynOrg/CSS-Snippets/main/UsernameSymbol.css");
+@import url("https://dablulite.github.io/css-snippets/AccountSettingsRefresh/import.css");
+@import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtons.theme.css");
+@import url("https://aushevahmad.github.io/awesome-css/modules/channeltweaks.css");
+@import url("https://dablulite.github.io/css-snippets/DeclutterBar/import.css");
+@import url("https://minidiscordthemes.github.io/FluentStatusIcons/FluentStatusIcons.theme.css");
+@import url("https://minidiscordthemes.github.io/MinimalAddonCards/MinimalAddonCards.theme.css");
+@import url("https://minidiscordthemes.github.io/Snippets/RoleTint/main.css");
 
 /* customize things here */
 :root {
@@ -119,4 +127,201 @@ div[data-list-item-id="guildsnav___home"] {
     transform: scaleX(1.2);
     margin-left: 15px;
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.5), 0 0 4px rgba(255, 255, 255, 0.3);
+}
+
+/* App launcher reposition */
+.channelTextArea_a7d72e {
+    position: relative;
+}
+
+.channelAppLauncher_df39bd {
+    position: absolute;
+    top: -50px;
+    right: 16px;;
+}
+/*Shake animation hover to the text area when you don't have permission !*/
+
+
+/* Reactions Hover */
+[class^=reaction_]:not(:has([class^=burstGlow_])) .emoji {
+	transition: transform 0.5s ease;
+  }
+  [class^=reaction_]:not(:has([class^=burstGlow_])):hover .emoji {
+	transform: translateY(-10px) scale(1.5);
+  }
+
+  /* no line clamp on new profiles */
+
+[class*=descriptionClamp] {
+	-webkit-line-clamp: 9999999;
+  }
+  
+  [class*=viewFullBio] {
+	display: none;
+  }
+
+
+  [class^="sidebar_"] [class^="panels_"] {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border: 1px solid var(--background-modifier-accent);
+	border-radius: 20px;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.45);
+  }
+  
+  [class^="sidebar_"] [class^="panels_"] [class^="container_"],
+  [class^="sidebar_"] [class^="panels_"] [class^="panel_"] {
+	background: transparent !important;
+  }
+  
+  [class^="sidebar_"] [class^="panels_"] [class^="container_"] [class^="avatarWrapper_"] + [class^="flex_"] {
+	margin-left: -10px;
+  }
+  
+  #vc-spotify-player {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+  }
+  
+  /* Nitro Theme Shit */
+  html.custom-theme-background [class^="sidebar_"] {
+	  background: var(--bg-overlay-3);
+  }
+  html.custom-theme-background [class^="sidebar_"] [class^="panels_"] {
+	  background: var(--bg-overlay-1);
+  }[class^="sidebar_"] [class^="panels_"] {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border: 1px solid var(--background-modifier-accent);
+	border-radius: 20px;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.45);
+  }
+  
+  [class^="sidebar_"] [class^="panels_"] [class^="container_"],
+  [class^="sidebar_"] [class^="panels_"] [class^="panel_"] {
+	background: transparent !important;
+  }
+  
+  [class^="sidebar_"] [class^="panels_"] [class^="container_"] [class^="avatarWrapper_"] + [class^="flex_"] {
+	margin-left: -10px;
+  }
+  
+  #vc-spotify-player {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+  }
+  
+  /* Nitro Theme Shit */
+  html.custom-theme-background [class^="sidebar_"] {
+	  background: var(--bg-overlay-3);
+  }
+  html.custom-theme-background [class^="sidebar_"] [class^="panels_"] {
+	  background: var(--bg-overlay-1);
+  }
+
+
+
+
+
+/* Jump To Present Bar Revamp */
+[class*="jumpToPresentBar"] {
+    display: contents;
+}
+
+[class*="jumpToPresentBar"] > button:first-child {
+    display: none;
+}
+
+[class*="jumpToPresentBar"] > button:last-child {
+    position: absolute;
+    z-index: 1;
+    bottom: 24px;
+    right: 22px;
+    padding: 8px !important;
+    height: auto;
+    background-color: #2e353b20;
+    box-shadow: var(--elevation-high);
+    border-radius: 100px;
+    display: flex;
+    font-size: 0px;
+    color: transparent;
+    transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+
+[class*="jumpToPresentBar"] > button svg {
+    order: -1;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #FFFFFF;
+    transition: margin .6s;
+}
+
+[class*="jumpToPresentBar"]:hover > button {
+    padding: 8px 18px !important;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: font-size .2s, color .2s .1s, padding .4s;
+}
+
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right: 2px;
+    margin-left: -6px;
+}
+
+
+/* Sélectionne l'élément avec les classes correspondantes */
+div.circleIconButton__5bc7e.discoveryIcon_ef3116 {
+  background-image: url('https://i.pinimg.com/originals/5b/88/6b/5b886b0949e236ef25c7a95a11b01fcd.gif'); /* Ton image animée */
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+
+div.circleIconButton__5bc7e.discoveryIcon_ef3116:hover {
+  opacity: 0.8; 
+}
+
+div.circleIconButton__5bc7e  {
+    background-image: url('https://64.media.tumblr.com/21093522d1617bc865eed5c589d0aa40/19f46930603678b5-5f/s540x810/6fe9e39ab1854f9e1ffd064f2f4bc28dccd01785.gif');
+    background-size: cover;
+    background-position: center;
+}
+svg.circleIcon__5bc7e {
+    display: none;
+}
+
+/* Cacher l'icône SVG actuelle */
+div.vc-toolbox-btn.iconWrapper__9293f.clickable__9293f svg {
+  display: none;
+}
+
+/* Remplacer l'icône SVG par une image personnalisée */
+div.vc-toolbox-btn.iconWrapper__9293f.clickable__9293f {
+  background-image: url('https://static.vecteezy.com/ti/vecteur-libre/p1/615553-icone-de-fleche-vers-le-bas-de-vecteur-gratuit-vectoriel.jpg'); /* Lien vers ton image personnalisée */
+  background-size: 30px; /* Assure-toi que l'image couvre tout le bouton */
+  background-position: center; /* Centrer l'image */
+  width: 26px; /* Ajuste la largeur du bouton selon l'image */
+  height: 26px; /* Ajuste la hauteur du bouton selon l'image */
+  border-radius: 50%; /* Pour un bouton circulaire */
+  border: ; /* Si tu veux retirer la bordure */
+  cursor: pointer; /* Pour avoir un curseur de type main au survol */
+}
+
+div.vc-toolbox-btn.iconWrapper__9293f.clickable__9293f.selected__9293f {
+  background-image: url('https://static.vecteezy.com/ti/vecteur-libre/p1/615375-icone-de-fleche-haut-vecteur-gratuit-vectoriel.jpg'); /* Lien vers ton image personnalisée */
+  background-size: 30px; /* Assure-toi que l'image couvre tout le bouton */
+  background-position: center; /* Centrer l'image */
+  width: 26px; /* Ajuste la largeur du bouton selon l'image */
+  height: 26px; /* Ajuste la hauteur du bouton selon l'image */
+  border-radius: 50%; /* Pour un bouton circulaire */
+  border: ; /* Si tu veux retirer la bordure */
+  cursor: pointer; /* Pour avoir un curseur de type main au survol */
 }
